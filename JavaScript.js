@@ -44,8 +44,8 @@ function playRound(x,y) {
 }
 
 function game() {
-    let playerScore = 0
-    let computerScore = 0
+    let playerScore = 0;
+    let computerScore = 0;
 
     for (let i = 1; i <= 5 ; i++) {
         let playerSelection = prompt("type here:").toLowerCase();
