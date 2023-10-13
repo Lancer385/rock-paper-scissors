@@ -63,8 +63,7 @@ nodeList.forEach((node) => {
     node.addEventListener('click', () => {
         if (playerScore < 5 && computerScore < 5){
             let computerCountSelection = getcomputerCountChoice();
-            let score = node.textContent;
-            let round = playRound(score, computerCountSelection);
+            let round = playRound(node.textContent.toLowerCase(), computerCountSelection);
             if  (round == 1){
                 playerScore++;
                 playerCount.textContent = `Player: ${playerScore}`;
